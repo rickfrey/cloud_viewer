@@ -22,7 +22,7 @@
 
 #include <pcl/filters/voxel_grid.h>
 
-
+//DIES IST EIN GITHUB TEST!!!!!
 typedef pcl::PointCloud<pcl::PointXYZRGB> cloud;
 
 int user_data;
