@@ -1,7 +1,7 @@
 //#include "PointCloudMatcher.h"// ????
 
-#include <ros/ros.h>
-#include <pcl_ros/point_cloud.h>
+//#include <ros/ros.h>
+//#include <pcl_ros/point_cloud.h>
 #include <pcl/point_types.h>
 #include <boost/foreach.hpp>
 #include <pcl/visualization/cloud_viewer.h> // Um die Punktewolke zu visualisieren! (funktioniert noch nicht)
@@ -56,7 +56,7 @@ viewerPsycho (pcl::visualization::PCLVisualizer& viewer)
 int main(int argc, char** argv)
 {
     pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZRGB>);
-    pcl::io::loadPCDFile ("Planes_cloud.pcd", *cloud);
+    pcl::io::loadPCDFile ("Arena_24_7_2014.pcd", *cloud);
     pcl::visualization::CloudViewer viewer("Cloud Viewer");
 
     //blocks until the cloud is actually rendered
